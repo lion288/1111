@@ -19,7 +19,7 @@
 	<script type="text/javascript" src="./CoinManager.js"></script>
 	
 	<script>
-		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false );
 		if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
 			var meta = document.getElementById ("viewport");
 			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
@@ -35,8 +35,7 @@
 </head>
 <body>
 	
-	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
-	
+		
 	<div id="openfl-content"></div>
 	
 	<script type="text/javascript">
